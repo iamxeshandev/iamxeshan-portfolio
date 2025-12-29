@@ -1,16 +1,15 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import SectionHeading from "./SectionHeading";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
+import SectionHeading from "./SectionHeading";
 
 const projects = [
     {
         title: "Cyberlytics Dashboard",
         description: "A high-performance SaaS dashboard for data visualization and analytics.",
-        image: "/project_dashboard_mockup_1767034938741.png",
+        image: "./project_dashboard_mockup_1767034938741.png",
         tags: ["Next.js", "TypeScript", "D3.js", "Tailwind"],
         github: "#",
         link: "#",
@@ -18,7 +17,7 @@ const projects = [
     {
         title: "LuxWatch E-commerce",
         description: "Premium e-commerce mobile experience with smooth transitions and glassmorphism.",
-        image: "/ecommerce_mobile_mockup_1767034956139.png",
+        image: "./ecommerce_mobile_mockup_1767034956139.png",
         tags: ["React Native", "Expo", "Reanimated", "Stripe"],
         github: "#",
         link: "#",
@@ -26,7 +25,7 @@ const projects = [
     {
         title: "VibeSocial App",
         description: "Modern social media platform with real-time interactions and glass UI.",
-        image: "/social_media_app_mockup_1767034971966.png",
+        image: "./social_media_app_mockup_1767034971966.png",
         tags: ["Next.js", "Firebase", "Framer Motion", "Tailwind"],
         github: "#",
         link: "#",
