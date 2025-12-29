@@ -33,12 +33,12 @@ export default function About() {
                 {skills.map((skill, i) => (
                     <motion.div
                         key={skill.name}
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
-                        whileHover={{ y: -8, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                        className="p-8 glass rounded-3xl border border-transparent transition-all hover:bg-white/[0.03] hover:border-brand-blue/30 shadow-xl"
+                        transition={{ duration: 0.6, delay: i * 0.05, ease: "easeOut" }}
+                        whileHover={{ y: -8, transition: { type: "spring", stiffness: 300, damping: 40 } }}
+                        className="p-8 glass rounded-3xl border border-transparent hover:bg-white/[0.03] hover:border-brand-blue/30 shadow-xl"
                     >
                         <div className="w-12 h-12 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue mb-6">
                             <skill.icon size={26} />

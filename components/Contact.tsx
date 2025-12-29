@@ -15,10 +15,10 @@ export default function Contact() {
             />
 
             <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0, scale: 0.98 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="max-w-3xl w-full glass rounded-[3rem] p-12 text-center border border-white/5 shadow-2xl relative overflow-hidden"
             >
                 {/* Decorative Background */}
@@ -38,8 +38,8 @@ export default function Contact() {
                         href="mailto:iamxeshan@gmail.com"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="inline-block px-10 py-5 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-all text-xl mb-12"
+                        transition={{ type: "spring", stiffness: 300, damping: 40 }}
+                        className="inline-block px-10 py-5 bg-white text-black font-bold rounded-full hover:bg-zinc-200 text-xl mb-12"
                     >
                         Say Hello
                     </motion.a>
@@ -55,7 +55,7 @@ export default function Contact() {
                                 key={i}
                                 href={social.href}
                                 whileHover={{ y: -5, scale: 1.1 }}
-                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                transition={{ type: "spring", stiffness: 300, damping: 40 }}
                                 className={cn("p-4 glass rounded-full transition-colors", social.color)}
                             >
                                 <social.icon size={24} />

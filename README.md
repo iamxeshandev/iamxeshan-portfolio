@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Professional Portfolio - Zeshan Mehmood
 
-## Getting Started
+A high-performance, visually stunning developer portfolio built with Next.js, Framer Motion, and Tailwind CSS. Featuring industrial-standard fluid animations, a responsive cursor spotlight, and a polished user experience.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Industrial Standard Fluidity**: Custom-tuned Framer Motion animations with zero jitter and optimized easing for a professional feel.
+- **Interactive Cursor Spotlight**: A dynamic, glassmorphism-inspired spotlight effect that tracks both mouse and touch input.
+- **Fully Responsive**: Optimized for all screen sizes, from high-resolution desktops to mobile touch displays.
+- **Glassmorphism Design**: Modern, premium UI utilizing subtle blurs, borders, and gradients.
+- **Direct CV Access**: Integrated Resume/CV download functionality in the Hero section.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: Geist Sans & Mono
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/iamxeshan/portfolio.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  **Open the live demo**:
+    Navigate to [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment (GitHub Pages)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for easy deployment to GitHub Pages:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Push to GitHub**: Ensure your code is on a GitHub repository named `iamxeshan-portfolio`.
+2.  **GitHub Actions**: The repository is ready for a `gh-pages` deployment or a custom GitHub Action that runs `npm run build`. 
+3.  **Static Export**: The `next.config.ts` is already set to `output: 'export'`, so running `npm run build` will generate an `out` folder.
+4.  **Base Path**: Note that the site is configured to run at `https://<username>.github.io/iamxeshan-portfolio/`.
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.

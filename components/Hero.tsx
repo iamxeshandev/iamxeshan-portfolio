@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, FileText, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -11,9 +11,9 @@ export default function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-blue/20 blur-[120px] rounded-full pointer-events-none" />
 
             <motion.div
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="z-10 text-center"
             >
                 <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider uppercase glass rounded-full text-brand-blue border-brand-blue/20">
@@ -33,10 +33,20 @@ export default function Hero() {
                         href="#projects"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="flex items-center gap-2 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-colors"
+                        transition={{ type: "spring", stiffness: 300, damping: 40 }}
+                        className="flex items-center gap-2 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-zinc-200"
                     >
                         View Projects <ArrowRight size={18} />
+                    </motion.a>
+
+                    <motion.a
+                        href="#" // Replace with actual Resume link
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 40 }}
+                        className="flex items-center gap-2 px-8 py-4 glass text-white font-semibold rounded-full hover:bg-white/10"
+                    >
+                        Download CV <FileText size={18} />
                     </motion.a>
 
                     <div className="flex items-center gap-3">
@@ -49,8 +59,8 @@ export default function Hero() {
                                 key={i}
                                 href={social.href}
                                 whileHover={{ y: -5 }}
-                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className="p-4 glass rounded-full text-zinc-400 hover:text-white transition-colors"
+                                transition={{ type: "spring", stiffness: 300, damping: 40 }}
+                                className="p-4 glass rounded-full text-zinc-400 hover:text-white"
                             >
                                 <social.icon size={20} />
                             </motion.a>

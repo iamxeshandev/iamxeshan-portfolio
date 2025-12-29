@@ -42,19 +42,19 @@ export default function Experience() {
                     {experiences.map((exp, i) => (
                         <motion.div
                             key={exp.company}
-                            initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30, y: 20 }}
+                            initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20, y: 10 }}
                             whileInView={{ opacity: 1, x: 0, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.8, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
+                            transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
                             className={`relative flex items-center justify-between w-full ${i % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
                         >
                             <div className="hidden md:block w-5/12" />
 
-                            <div className="absolute left-4 md:left-1/2 w-10 h-10 bg-black border border-white/20 rounded-full -translate-x-1/2 flex items-center justify-center z-10 transition-colors group-hover:border-brand-blue/50">
+                            <div className="absolute left-4 md:left-1/2 w-10 h-10 bg-black border border-white/20 rounded-full -translate-x-1/2 flex items-center justify-center z-10">
                                 <Briefcase size={16} className="text-brand-blue" />
                             </div>
 
-                            <div className="w-full md:w-5/12 ml-14 md:ml-0 p-8 glass rounded-[2rem] border border-white/5 hover:border-brand-blue/30 transition-all hover:bg-white/[0.03] shadow-xl">
+                            <div className="w-full md:w-5/12 ml-14 md:ml-0 p-8 glass rounded-[2rem] border border-white/5 hover:border-brand-blue/30 transition-shadow hover:bg-white/[0.03] shadow-xl">
                                 <span className="text-sm font-semibold text-brand-blue uppercase tracking-wider">{exp.period}</span>
                                 <h3 className="text-2xl font-bold mt-2">{exp.company}</h3>
                                 <p className="text-zinc-300 font-medium mt-1">{exp.role}</p>

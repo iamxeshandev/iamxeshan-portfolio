@@ -9,7 +9,7 @@ const projects = [
     {
         title: "Cyberlytics Dashboard",
         description: "A high-performance SaaS dashboard for data visualization and analytics.",
-        image: "./project_dashboard_mockup_1767034938741.png",
+        image: "/project_dashboard_mockup_1767034938741.png",
         tags: ["Next.js", "TypeScript", "D3.js", "Tailwind"],
         github: "#",
         link: "#",
@@ -17,7 +17,7 @@ const projects = [
     {
         title: "LuxWatch E-commerce",
         description: "Premium e-commerce mobile experience with smooth transitions and glassmorphism.",
-        image: "./ecommerce_mobile_mockup_1767034956139.png",
+        image: "/ecommerce_mobile_mockup_1767034956139.png",
         tags: ["React Native", "Expo", "Reanimated", "Stripe"],
         github: "#",
         link: "#",
@@ -25,7 +25,7 @@ const projects = [
     {
         title: "VibeSocial App",
         description: "Modern social media platform with real-time interactions and glass UI.",
-        image: "./social_media_app_mockup_1767034971966.png",
+        image: "/social_media_app_mockup_1767034971966.png",
         tags: ["Next.js", "Firebase", "Framer Motion", "Tailwind"],
         github: "#",
         link: "#",
@@ -44,21 +44,21 @@ export default function Projects() {
                 {projects.map((project, i) => (
                     <motion.div
                         key={project.title}
-                        initial={{ opacity: 0, scale: 0.9, y: 30 }}
+                        initial={{ opacity: 0, scale: 0.98, y: 20 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
-                        className="group relative glass rounded-[2rem] overflow-hidden border border-white/5 hover:border-brand-blue/30 transition-all shadow-2xl hover:shadow-brand-blue/20"
+                        transition={{ duration: 0.6, delay: i * 0.05, ease: "easeOut" }}
+                        className="group relative glass rounded-[2rem] overflow-hidden border border-white/5 hover:border-brand-blue/30 shadow-2xl hover:shadow-brand-blue/20"
                     >
                         <div className="relative h-64 w-full overflow-hidden">
                             <Image
                                 src={project.image}
                                 alt={project.title}
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                <a href={project.github} className="p-3 bg-white/10 blur-sm-0 rounded-full hover:bg-white/20 transition-colors">
+                                <a href={project.github} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
                                     <Github size={20} />
                                 </a>
                                 <a href={project.link} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
