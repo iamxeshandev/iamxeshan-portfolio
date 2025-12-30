@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://iamxeshandev.github.io",
     images: [
       {
-        url: "https://iamxeshandev.github.io/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zeshan Mehmood Portfolio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: "Personal portfolio of Zeshan Mehmood",
     creator: "@iamxeshandev",
     site: "@iamxeshandev",
-    images: ["https://iamxeshandev.github.io/og-image.png"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -59,6 +59,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="https://iamxeshandev.github.io/og-image.jpg" />
+        <meta name="twitter:image" content="https://iamxeshandev.github.io/og-image.jpg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
