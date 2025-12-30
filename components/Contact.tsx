@@ -46,14 +46,14 @@ export default function Contact() {
 
                     <div className="flex items-center justify-center gap-6">
                         {[
-                            { icon: Github, href: "#", color: "hover:text-white" },
-                            { icon: Linkedin, href: "#", color: "hover:text-brand-blue" },
-                            { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-                            { icon: Mail, href: "mailto:iamxeshan@gmail.com", color: "hover:text-red-400" },
+                            { icon: Github, href: "https://github.com/iamxeshandev", color: "hover:text-white", target: "_blank" },
+                            { icon: Linkedin, href: "https://www.linkedin.com/in/zeshanmehmood", color: "hover:text-brand-blue", target: "_blank" },
+                            { icon: Mail, href: "mailto:iamxeshan@gmail.com", color: "hover:text-red-400", target: "" },
                         ].map((social, i) => (
                             <motion.a
                                 key={i}
                                 href={social.href}
+                                target={social.target}
                                 whileHover={{ y: -5, scale: 1.1 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 40 }}
                                 className={cn("p-4 glass rounded-full transition-colors", social.color)}

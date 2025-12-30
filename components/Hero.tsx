@@ -51,13 +51,14 @@ export default function Hero() {
 
                     <div className="flex items-center gap-3">
                         {[
-                            { icon: Github, href: "#" },
-                            { icon: Linkedin, href: "#" },
-                            { icon: Mail, href: "#" }
+                            { icon: Github, href: "https://github.com/iamxeshandev", target: "_blank" },
+                            { icon: Linkedin, href: "https://www.linkedin.com/in/zeshanmehmood", target: "_blank" },
+                            { icon: Mail, href: "mailto:iamxeshan@gmail.com", target: "" }
                         ].map((social, i) => (
                             <motion.a
                                 key={i}
                                 href={social.href}
+                                target={social.target}
                                 whileHover={{ y: -5 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 40 }}
                                 className="p-4 glass rounded-full text-zinc-400 hover:text-white"
