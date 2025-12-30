@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://iamxeshandev.github.io",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://iamxeshandev.github.io/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zeshan Mehmood Portfolio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: "Personal portfolio of Zeshan Mehmood",
     creator: "@iamxeshandev",
     site: "@iamxeshandev",
-    images: ["/og-image.png"],
+    images: ["https://iamxeshandev.github.io/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
